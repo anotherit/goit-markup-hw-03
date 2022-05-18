@@ -32,8 +32,17 @@ body{
     
     
 
+
 /*logo*/
 }
+.container {
+    outline: 1px solid red;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
 .logo{
 color: var(--accent-cl);
 font-family:var(--secondary-font);
@@ -41,19 +50,19 @@ font-family:var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-   
-   
-    display: flex;
+    letter-spacing: 0.03em;     
     background-color: gold;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    width: 145px;
+    height: 31px;
 
-
-    
+   
+   
 
 }
 .logoright{
     color: var(--main-txt-cl);
-display: inline-block;
     
 }
 .footer-logoright{
@@ -73,15 +82,28 @@ display: inline-block;
         letter-spacing: 0.02em;
         font-size: 14px;
         outline: 2px solid greenyellow ;
-        margin-left: 50px;
+        
         
        
 }
-.contacts{
-    display: flex;
-    
+.mail{
+    margin-right: 50px;
+   
 }
+.nav{
+   width: 294px;
+ background-color: aquamarine;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+margin-left: 93px;
+ width: 294px;
+ padding: 0px;
+ margin-top: 32px;
+ margin-bottom: 32px;
 
+ 
+}
 .contacts-text:focus {
     color: var(--accent-cl);
 }
@@ -89,26 +111,29 @@ display: inline-block;
 .contacts-text:hover {
     color: var(--accent-cl);
 }
+.contacts{
+    display: flex;
+    background-color: darkgoldenrod;
+    flex-direction: row; 
+    align-items: center;
+    margin-left: 331px;
+    margin: 32px;
+    
+
+}
 .site-nav{
     color: var(--main-txt-cl);       
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
         margin-left: 50px;
-        
-            
-            
-        
-        
+        outline: 1px solid violet;       
 }
 .site-nav-ul{
-margin-left: 453px;
-display: flex;
-
-
-
-
+    display: flex;
+    
 }
+
 .site-nav:hover{
     color: var(--accent-cl);   
 
@@ -118,6 +143,7 @@ display: flex;
 }
 .current{
     color: var(--accent-cl);
+    margin-left: 0px;
 }
 
 
@@ -172,6 +198,9 @@ background-color:  #188CE8;
 color: var(--main-bg-cl);
 }
 /* Преимущества */
+.section{
+    display: flex;}
+    
 .section-title{
 color: var(--main-txt-cl);
     font-size: 14px;
