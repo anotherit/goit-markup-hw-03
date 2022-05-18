@@ -14,6 +14,15 @@
 --btn-bg-cl: #2196F3;
 --section-bg-cl:#F5F4FA;
 }
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing:inherit ;
+}
+
 body{
     font-family: var(--main-font);
     font-size: 14px;
@@ -33,14 +42,18 @@ font-family:var(--secondary-font);
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    
+   
+   
+    display: flex;
+    background-color: gold;
+
 
     
 
 }
 .logoright{
     color: var(--main-txt-cl);
-
+display: inline-block;
     
 }
 .footer-logoright{
@@ -59,7 +72,14 @@ font-family:var(--secondary-font);
         line-height: 1.14;
         letter-spacing: 0.02em;
         font-size: 14px;
+        outline: 2px solid greenyellow ;
+        margin-left: 50px;
         
+       
+}
+.contacts{
+    display: flex;
+    
 }
 
 .contacts-text:focus {
@@ -74,7 +94,20 @@ font-family:var(--secondary-font);
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
+        margin-left: 50px;
         
+            
+            
+        
+        
+}
+.site-nav-ul{
+margin-left: 453px;
+display: flex;
+
+
+
+
 }
 .site-nav:hover{
     color: var(--accent-cl);   
@@ -91,11 +124,15 @@ font-family:var(--secondary-font);
 
 .header{
     background-color: var(--main-bg-cl);
+    display: flex;
+    
+    
+
 }
 .hidden{
     display: none;
 }
-/*section container*/
+
 .hero-button{
 background-color:var(--btn-bg-cl);
 color:#ffffff;
@@ -260,4 +297,18 @@ font-weight: 700;
     background-color: var(--btn-bg-cl);
     border: var(--btn-bg-cl);
     color: var(--main-bg-cl);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
