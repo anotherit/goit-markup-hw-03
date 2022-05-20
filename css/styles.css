@@ -31,7 +31,6 @@ body{
     letter-spacing:0.03em;
     color:var(--main-txt-cl) ;
     background-color: var(--main-bg-cl);
-    width: 1600px;
     /* outline: 2px solid black; */
 }
 .flex-class{
