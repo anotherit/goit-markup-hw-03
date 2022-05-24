@@ -72,10 +72,7 @@ font-family:var(--secondary-font);
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;     
-    /*margin-top: 24px;
-    margin-bottom: 25px;
-    width: 145px;
-    height: 31px;*/
+    
 }
 .logoright{
     color: var(--main-txt-cl);
@@ -90,7 +87,7 @@ font-family:var(--secondary-font);
     text-decoration: none;
     
 }
-/*header*/
+
 .contacts-text{
     color: var(--secondary-txt-cl);
         font-weight: 500;
@@ -137,7 +134,7 @@ font-family:var(--secondary-font);
     
 
 }
-.site-nav-item{
+.site-nav{
     color: var(--main-txt-cl);       
         font-weight: 500;
         line-height: 1.14;
@@ -256,7 +253,6 @@ color: var(--main-bg-cl);
     
     padding-top: 94px;
     padding-bottom: 94px;
-    display: flex;
 }
 
 
@@ -290,7 +286,7 @@ font-weight: 700;
     display: flex;
 }
 .box{
-    padding-bottom: 0;
+    padding-top: 0;
 }
 .box-title{
     color: var(--main-txt-cl);
@@ -309,14 +305,23 @@ font-weight: 700;
 .box-content:last-child{
     margin-right: 0;
 }
-.img{
+img{
     display: block;
     width: 100%;
     height: auto;
 }
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    
 }
 /* #endregion box-img */
 /* #region team */
