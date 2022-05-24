@@ -1,3 +1,4 @@
+/* #region basic-root */
 :root {
 --main-font: 'Roboto', sans-serif;
 --secondary-font: 'Raleway', sans-serif;
@@ -33,10 +34,26 @@ body{
     background-color: var(--main-bg-cl);
     /* outline: 2px solid black; */
 }
-.flex-class{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* #endregion basic-root */
+/* .flex-class{
     display: flex;
 
-}
+} */
 
 .container {
     /* outline: 3px solid red; */
@@ -46,7 +63,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
-
+/* #region header */
 .logo{
 color: var(--accent-cl);
 font-family:var(--secondary-font);
@@ -162,8 +179,8 @@ font-family:var(--secondary-font);
 
 .header{
     background-color: var(--main-bg-cl);
-    border-bottom: 1px solid rgba(47, 48, 58, 0.4);
-    
+    border-bottom: 1px solid  #ECECEC;
+
     
     
 
@@ -172,13 +189,8 @@ font-family:var(--secondary-font);
     display: flex;
     align-items:center ;
 }
-/* .hidden{
-    display: none;
-} */
-.visually-hidden {
-    position: fixed;
-    transform: scale(0);
-}
+/* #endregion header */
+/* #region hero */
 
 .hero-button{
 background-color:var(--btn-bg-cl);
@@ -199,7 +211,6 @@ background-color:  #188CE8;
     background-color: #188CE8;
 }
 
-/* hero */
 .hero{
     background-color: var(--secondary-bg-cl);
     
@@ -238,7 +249,9 @@ color: var(--main-bg-cl);
 .hero-button{
     border: 0px;
 }
-/* Преимущества */
+
+/* #endregion hero */
+/* #region benefits-section */
 .section{
     
     padding-top: 94px;
@@ -270,10 +283,9 @@ font-weight: 700;
         line-height: 1.71;
        text-align: left;
 }
-/* Чем мы занимаемся */
-/* .box{
-    display: flex;
-} */
+/* #endregion benefits-section */
+
+/* #region box-img */
 .box-item{
     display: flex;
 }
@@ -302,7 +314,12 @@ font-weight: 700;
     width: 100%;
     height: auto;
 }
-
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+/* #endregion box-img */
+/* #region team */
 .section-team{
     background-color: var(--section-bg-cl);
 }
@@ -346,7 +363,9 @@ font-weight: 700;
  .team:last-child{
      margin-right: 0;
  }   
-.footer{
+ /* #endregion team */
+/* #region footer */
+ .footer{
     background-color: var(--secondary-bg-cl);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -392,7 +411,9 @@ font-weight: 700;
 .footer-item:last-child{
     margin-bottom: 0;
 }
+/* #endregion footer */
 /* portfolio */
+/* #region examples */
 .examples{
     text-decoration: none;
     display: flex;
@@ -414,8 +435,37 @@ font-weight: 700;
         letter-spacing: 0.03em;
         
 }
+.examples-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
 
-/* buttons */
+.examples-item:nth-last-child(-n+3) {
+
+    margin-bottom: 0;
+}
+
+.examples-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.examples-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.examples-title {
+    margin-bottom: 4px;
+}
+/* #endregion examples */
+/* #region features */
+
+
 .features-button{
     background-color: var(--section-bg-cl);
     border: var(--section-bg-cl);
@@ -436,20 +486,7 @@ font-weight: 700;
     border: var(--btn-bg-cl);
     color: var(--main-bg-cl);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 .features{
     display: flex;
@@ -473,30 +510,6 @@ padding-top: 6px;
     padding-right: 22px;
     text-align:center;
 }
-/*#region*/
-.examples-item{
-margin-right: 30px;
-margin-bottom: 30px;
-}
-.examples-item:nth-last-child(-n+3) {
-    
-    margin-bottom: 0;
-}
 
-.examples-item:nth-child(3n) {
-    margin-right: 0;
-}
-.examples-div{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-}
-.examples-title{
-    margin-bottom: 4px;
-}
-/*#endregion*/
-.thumb
+
+/*#endregion features*/
